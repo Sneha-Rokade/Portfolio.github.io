@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hurricane&family=Lobster&family=Poppins:ital,wght@0,400;0,500;1,400&family=Roboto:ital,wght@0,400;0,500;1,400&family=Ubuntu:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/resources/images/bgimg1.jpg");
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 40px;
+  letter-spacing: 3px;
+  margin-top: 5px;
+  margin-left: 40px;
+ font-family: 'Ubuntu', sans-serif;;
+}
+
+.logo span {
+  color: #e40505;
+  transition: 0.4;
+}
+
+.navbar .nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .nav-link:hover {
+  background-color: #e40505;
+  color: #ffffff;
+}
+
+.row-header {
+  display: flex;
+  margin-top: 60px;
+}
+
+.col-header-left {
+  margin-left: 50px;
+}
+.col-header-right {
+  margin-left: 20px;
+  margin-right: 50px;
+  margin-top: 60px;
+}
+
+.col-header-right .text {
+  font-size: 24px;
+  color: #77c1e9;
+}
+
+.text h1,
+.bannertext {
+  color: #fff;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.text p {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.typing {
+  color: #f72121;
+  font-weight: bold;
+}
+
+/* scroll up */
+.scroll-button {
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: #033a55;
+  right: 30px;
+  bottom: 10px;
+  color: #0af7f7;
+  text-align: center;
+  line-height: 42px;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* about section start */
+#more {display: none;}
+
+#myBtn{
+  background-color: #033a55;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #2c6683;
+}
+/* about section start */
+
+/* Education part start */
+/* The actual timeline (the vertical ruler) */
+.container-timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.container-timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  /* margin-left: -3px; */
+}
+
+/* Container around content */
+.container-row-timeline {
+  padding: 10px 10px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.container-row-timeline::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  right: -13px;
+  background-color: #ffffff;
+  border: 4px solid #0882c9;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgb(189, 63, 63);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #76cbec;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #76cbec transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -8px;
+}
+
+/* The actual content */
+.content-timeline {
+  padding: 20px 30px;
+  background-color: #232729;
+  color: #12e9e9;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* education part end */
+
+/* skill */
+.box-skill:hover {
+  background: #810d81;
+  transform: scale(0.7);
+  transition-timing-function: linear;
+  border-radius: 10px;
+  padding-top: 40px;
+}
+
+.box-skill {
+  transition: all 500ms ease-in-out;
+}
+
+/* contact us */
+#contact {
+  background-color: #a1aeb4;
+  box-sizing: border-box;
+  border: 1px solid #232729;
+  padding: 20px;
+  line-height: 40px;
+}
+
+#contact .bi {
+  margin-left: 5px;
+}
+
+.contactTxt {
+  margin-left: 20x;
+  font-weight: bold;
+}
+
+.imghover:hover {
+  cursor: pointer;
+  background-color: #0882c9;
+}
+
+/* project start */
+.card:hover{
+  transform: scale(0.7);
+  transition-timing-function: linear;
+  border-radius: 10px;
+  padding-top: 40px;
+}
+
+.card{
+   transition: all 500ms ease-in-out;
+}
+/* project end */
+
+
+/* certification start */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #032c52;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* certification end */
