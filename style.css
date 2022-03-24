@@ -9,9 +9,8 @@
 header {
   width: 100%;
   height: 100vh;
-  background-image: url("resources/bgimg1.jpg");
+  background-image: url('resources/bgimg1.jpg.crdownload');
   background-size: cover;
-  clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
 .logo {
@@ -51,19 +50,20 @@ header {
   margin-left: 50px;
 }
 .col-header-right {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: 50px;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .col-header-right .text {
-  font-size: 24px;
+  font-size: 30px;
+  font-weight:bold;
   color: #77c1e9;
 }
 
 .text h1,
 .bannertext {
-  color: #fff;
+  color: #ffffff;
   font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -73,7 +73,7 @@ header {
 }
 
 .typing {
-  color: #f72121;
+  color: #da0909;
   font-weight: bold;
 }
 
@@ -262,7 +262,7 @@ h2{
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #ffffff;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
