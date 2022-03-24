@@ -25,15 +25,3 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
-
-// const readMoreBtn = document.querySelector('.read-more-btn');
-// const para = document.querySelector('.para');
-
-// readMoreBtn.addEventListener('click',(e)=>{
-//    para.classList.toggle('show-more');
-//    if(readMoreBtn.innerText === 'Read More'){
-//        readMoreBtn.innerText = 'Read Less';
-//    }else{
-//        readMoreBtn.innerText = 'Read More';
-//    }
-// })
